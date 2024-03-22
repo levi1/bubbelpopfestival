@@ -2298,22 +2298,22 @@ textarea.w-input, textarea.w-select {
   text-align: left;
   letter-spacing: 2px;
   text-transform: uppercase;
-  background-color: #1a1b1f;
+  background-color: #1097b8;
   padding: 12px 25px;
   font-family: Glacialindifference, Arial, sans-serif;
   font-size: 20px;
   line-height: 36px;
-  transition: all .2s;
+  transition: background-color .2s;
   display: inline-block;
 }
 
 .button-primary:hover {
   color: #fff;
-  background-color: #32343a;
+  background-color: #14bce6;
 }
 
 .button-primary:active {
-  background-color: #43464d;
+  background-color: #14bce6;
 }
 
 .button-primary.button-float {
