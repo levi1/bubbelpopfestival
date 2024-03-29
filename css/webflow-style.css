@@ -3289,6 +3289,14 @@ textarea.w-input, textarea.w-select {
     font-size: 26px;
   }
 
+  .head-container {
+    width: 25%;
+  }
+
+  .head-container.logo-small {
+    width: 50%;
+  }
+
   .adres-link {
     font-size: 10px;
   }
