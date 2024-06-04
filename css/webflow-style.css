@@ -3005,12 +3005,27 @@ textarea.w-input, textarea.w-select {
   text-decoration: none;
 }
 
-.grid-2 {
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr;
+.sponsor-grid {
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
   width: 100%;
+}
+
+.logo-padding {
+  text-align: justify;
+  max-width: 100%;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10px;
+  font-family: Glacialindifference, Arial, sans-serif;
+  font-size: 18px;
+}
+
+.logo-padding.hidden-big-screens {
+  display: none;
 }
 
 @media screen and (max-width: 991px) {
@@ -3283,6 +3298,14 @@ textarea.w-input, textarea.w-select {
   .footer-divider {
     margin-top: 60px;
   }
+
+  .logo-padding.hidden-big-screens {
+    display: inline-block;
+  }
+
+  .logo-padding.hidden-small-screens {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -3380,6 +3403,15 @@ textarea.w-input, textarea.w-select {
   .menu-button-2.w--open {
     background-color: #1097b8;
   }
+
+  .sponsor-grid {
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+#w-node-_6aa302e8-5bb4-b9ba-c81f-81e0aacbb432-1af52c7a, #w-node-_86431162-0fcc-9e8c-1e81-1123b1f38806-1af52c7a, #w-node-d04844ec-5881-6e5b-9858-98598d677b35-1af52c7a, #w-node-_4a382165-2dba-3fcf-0d83-e81e0508d602-1af52c7a, #w-node-be063e0c-5028-09d0-b4b3-90b562aa11c9-1af52c7a, #w-node-_7ce1619f-db47-e906-ee51-c8cd90d417d8-1af52c7a, #w-node-cde31605-c173-76ae-9d34-fdb1c8e073c2-1af52c7a {
+  grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
 @font-face {
