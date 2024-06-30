@@ -2487,14 +2487,14 @@ body {
   text-align: center;
 }
 
-.acts {
+.acts_old {
   background-color: rgba(16, 151, 184, .5);
   border: 1px dashed #000;
   border-radius: 8px;
   font-family: Glacialindifference, Arial, sans-serif;
 }
 
-.dj {
+.dj_old {
   background-color: rgba(227, 98, 160, .5);
   border: 1px dashed #000;
   border-radius: 8px;
@@ -3074,18 +3074,20 @@ body {
 }
 
 .tijdslot {
+  text-align: left;
   order: -1;
   justify-content: center;
   align-items: center;
+  margin-left: 10px;
   padding-left: 0;
   padding-right: 0;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   display: block;
 }
 
-.dj-test {
+.dj {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   background-color: rgba(227, 98, 160, .5);
@@ -3102,7 +3104,7 @@ body {
   display: block;
 }
 
-.acts-test {
+.acts {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   background-color: rgba(16, 151, 184, .5);
@@ -3122,11 +3124,11 @@ body {
   grid-template-rows: auto;
   grid-template-columns: 1.5fr 5fr;
   align-items: center;
-  justify-items: center;
+  justify-items: start;
 }
 
 .line-up-header-blue {
-  color: rgba(16, 151, 184, .5);
+  color: rgba(16, 151, 184, .77);
   justify-content: center;
   align-items: center;
   font-family: Wedges, Arial, sans-serif;
@@ -3135,7 +3137,7 @@ body {
 }
 
 .line-up-header-pink {
-  color: rgba(227, 98, 160, .5);
+  color: rgba(227, 98, 160, .71);
   font-family: Wedges, Arial, sans-serif;
   font-weight: 400;
   display: inline-flex;
@@ -3157,6 +3159,18 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.band-image {
+  max-width: 100%;
+  padding: 10px;
+}
+
+.beschrijving {
+  text-align: left;
+  margin: 10px;
+  font-family: Glacialindifference, Arial, sans-serif;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 991px) {
@@ -3464,7 +3478,7 @@ body {
     font-size: 32px;
   }
 
-  .acts, .dj {
+  .acts_old, .dj_old {
     font-size: 26px;
   }
 
@@ -3546,11 +3560,11 @@ body {
   }
 
   .tijdslot {
-    font-size: 10px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 18px;
   }
 
-  .dj-test, .acts-test {
+  .dj, .acts {
     font-size: 26px;
   }
 
