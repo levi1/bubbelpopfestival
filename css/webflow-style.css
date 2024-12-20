@@ -294,54 +294,54 @@ pre.w-code-block code {
   display: contents;
 }
 
-.w-webflow-badge, .w-webflow-badge * {
-  z-index: auto;
-  visibility: visible;
-  box-sizing: border-box;
-  float: none;
-  clear: none;
-  box-shadow: none;
-  opacity: 1;
-  direction: ltr;
-  font-family: inherit;
-  font-weight: inherit;
-  color: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  font-style: inherit;
-  font-variant: inherit;
-  text-align: inherit;
-  letter-spacing: inherit;
-  -webkit-text-decoration: inherit;
-  text-decoration: inherit;
-  text-indent: 0;
-  text-transform: inherit;
-  text-shadow: none;
-  font-smoothing: auto;
-  vertical-align: baseline;
-  cursor: inherit;
-  white-space: inherit;
-  word-break: normal;
-  word-spacing: normal;
-  word-wrap: normal;
-  background: none;
-  border: 0 #0000;
-  border-radius: 0;
-  width: auto;
-  min-width: 0;
-  max-width: none;
-  height: auto;
-  min-height: 0;
-  max-height: none;
-  margin: 0;
-  padding: 0;
-  list-style-type: disc;
-  transition: none;
-  display: block;
-  position: static;
-  inset: auto;
-  overflow: visible;
-  transform: none;
+.w-webflow-badge, .w-webflow-badge > img {
+  box-sizing: unset;
+  width: unset;
+  height: unset;
+  max-height: unset;
+  max-width: unset;
+  min-height: unset;
+  min-width: unset;
+  margin: unset;
+  padding: unset;
+  float: unset;
+  clear: unset;
+  border: unset;
+  border-radius: unset;
+  background: unset;
+  background-image: unset;
+  background-position: unset;
+  background-size: unset;
+  background-repeat: unset;
+  background-origin: unset;
+  background-clip: unset;
+  background-attachment: unset;
+  background-color: unset;
+  box-shadow: unset;
+  transform: unset;
+  direction: unset;
+  font-family: unset;
+  font-weight: unset;
+  color: unset;
+  font-size: unset;
+  line-height: unset;
+  font-style: unset;
+  font-variant: unset;
+  text-align: unset;
+  letter-spacing: unset;
+  -webkit-text-decoration: unset;
+  text-decoration: unset;
+  text-indent: unset;
+  text-transform: unset;
+  list-style-type: unset;
+  text-shadow: unset;
+  vertical-align: unset;
+  cursor: unset;
+  white-space: unset;
+  word-break: unset;
+  word-spacing: unset;
+  word-wrap: unset;
+  transition: unset;
 }
 
 .w-webflow-badge {
@@ -349,9 +349,10 @@ pre.w-code-block code {
   cursor: pointer;
   box-shadow: 0 0 0 1px #0000001a, 0 1px 3px #0000001a;
   visibility: visible !important;
+  opacity: 1 !important;
   z-index: 2147483647 !important;
   color: #aaadb0 !important;
-  opacity: 1 !important;
+  overflow: unset !important;
   background-color: #fff !important;
   border-radius: 3px !important;
   width: auto !important;
@@ -364,12 +365,12 @@ pre.w-code-block code {
   display: inline-block !important;
   position: fixed !important;
   inset: auto 12px 12px auto !important;
-  overflow: visible !important;
   transform: none !important;
 }
 
 .w-webflow-badge > img {
-  visibility: visible !important;
+  position: unset;
+  visibility: unset !important;
   opacity: 1 !important;
   vertical-align: middle !important;
   display: inline-block !important;
@@ -2309,7 +2310,7 @@ body {
 .hero-heading-center {
   background-color: #f5f7fa00;
   background-image: url("../images/banner_small.jpg");
-  background-position: 50%;
+  background-position: 30% 70%;
   background-repeat: repeat;
   background-size: cover;
   border: 1px #000;
@@ -2338,6 +2339,7 @@ body {
 
 .centered-heading.margin-bottom-32px {
   color: #e362a0;
+  text-shadow: 3px 3px 5px #000;
   overflow-wrap: normal;
   margin-bottom: 32px;
   font-family: Glacialindifference, Arial, sans-serif;
@@ -2425,7 +2427,9 @@ body {
 
 .programma-header {
   float: none;
+  color: #f89dc3;
   text-align: center;
+  text-shadow: 3px 2px 1px #1097b8;
   font-family: Wedges, Arial, sans-serif;
   font-size: 50px;
   font-weight: 400;
@@ -2551,7 +2555,7 @@ body {
   padding-right: 10px;
 }
 
-.camping-padding {
+.text {
   text-align: justify;
   width: 100%;
   max-width: 100%;
@@ -2563,7 +2567,7 @@ body {
   font-size: 18px;
 }
 
-.camping-padding.hidden-big-screens {
+.text.hidden-big-screens {
   display: none;
 }
 
@@ -2611,10 +2615,6 @@ body {
 .socials-link {
   margin: 10px;
   display: inline-block;
-}
-
-.image-5 {
-  max-width: 50%;
 }
 
 .image-6 {
@@ -3121,6 +3121,38 @@ body {
   display: flex;
 }
 
+.bbp-text {
+  text-align: justify;
+  font-family: Glacialindifference, Arial, sans-serif;
+  font-size: 18px;
+}
+
+.picture {
+  border-radius: 15px;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 10px;
+}
+
+.picture.hidden-big-screens {
+  display: none;
+}
+
+.header-announcement {
+  float: none;
+  color: #f89dc3;
+  text-align: center;
+  text-shadow: 3px 2px 1px #1097b8;
+  font-family: Wedges, Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 52px;
+  position: static;
+}
+
 @media screen and (max-width: 991px) {
   .container {
     max-width: 728px;
@@ -3158,6 +3190,13 @@ body {
   .menu-button.w--open {
     color: #fff;
     background-color: #a6b1bf;
+  }
+
+  .hero-heading-center {
+    background-position: 30%;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: scroll;
   }
 
   .container-2 {
@@ -3303,6 +3342,7 @@ body {
   }
 
   .hero-heading-center {
+    background-position: 30%;
     padding: 60px 15px;
   }
 
@@ -3312,11 +3352,11 @@ body {
     font-size: 16px;
   }
 
-  .camping-padding.hidden-big-screens {
+  .text.hidden-big-screens {
     display: inline-block;
   }
 
-  .camping-padding.hidden-small-screens {
+  .text.hidden-small-screens {
     display: none;
   }
 
@@ -3399,6 +3439,14 @@ body {
   .logo-padding.hidden-small-screens {
     display: none;
   }
+
+  .picture.hidden-big-screens {
+    display: inline-block;
+  }
+
+  .picture.hidden-small-screens {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -3410,8 +3458,15 @@ body {
     flex-direction: column;
   }
 
+  .hero-heading-center {
+    background-position: 50%;
+    background-size: auto 100%;
+  }
+
   .container-2 {
     max-width: none;
+    margin-top: 10px;
+    padding-bottom: 140px;
   }
 
   .centered-heading {
@@ -3468,11 +3523,13 @@ body {
   .footer-wrapper-two {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-left: 10px;
   }
 
   .footer-block-two {
     margin-top: 40px;
+    display: flex;
   }
 
   .footer-bottom {
@@ -3500,6 +3557,10 @@ body {
   .sponsor-grid {
     grid-template-rows: auto auto auto auto;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .header-2 {
+    text-align: center;
   }
 
   .naam {
@@ -3533,6 +3594,17 @@ body {
   .beschrijving {
     text-align: left;
   }
+
+  .column-2024 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .header-announcement {
+    margin-top: 20px;
+    font-size: 36px;
+    line-height: 40px;
+  }
 }
 
 #w-node-_6aa302e8-5bb4-b9ba-c81f-81e0aacbb432-1af52c7a, #w-node-_86431162-0fcc-9e8c-1e81-1123b1f38806-1af52c7a, #w-node-d04844ec-5881-6e5b-9858-98598d677b35-1af52c7a, #w-node-_4a382165-2dba-3fcf-0d83-e81e0508d602-1af52c7a, #w-node-be063e0c-5028-09d0-b4b3-90b562aa11c9-1af52c7a, #w-node-_7ce1619f-db47-e906-ee51-c8cd90d417d8-1af52c7a, #w-node-cde31605-c173-76ae-9d34-fdb1c8e073c2-1af52c7a {
@@ -3541,21 +3613,21 @@ body {
 
 @font-face {
   font-family: 'Wedges';
-  src: url('../images/65fcae13b69c71ec5bec770c_wedges.ttf') format('truetype');
+  src: url('../images/wedges.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Glacialindifference';
-  src: url('../images/65fcaacf0d6ab81a987c0a62_glacialindifference-bold.otf') format('opentype');
+  src: url('../images/glacialindifference-bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Glacialindifference';
-  src: url('../images/65fcaacfd6b84030e2d65796_glacialindifference-regular.otf') format('opentype');
+  src: url('../images/glacialindifference-regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
