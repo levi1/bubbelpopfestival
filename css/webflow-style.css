@@ -3459,14 +3459,16 @@ body {
   }
 
   .hero-heading-center {
-    background-position: 50%;
-    background-size: auto 100%;
+    background-image: url("../images/banner_small.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: scroll;
   }
 
   .container-2 {
     max-width: none;
-    margin-top: 10px;
-    padding-bottom: 140px;
+    margin-top: 20px;
+    padding-bottom: 100px;
   }
 
   .centered-heading {
