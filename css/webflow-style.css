@@ -2165,14 +2165,7 @@ body {
   color: #1a1b1fbf;
 }
 
-.nav-link:focus-visible {
-  outline-offset: 0px;
-  color: #0050bd;
-  border-radius: 4px;
-  outline: 2px solid #0050bd;
-}
-
-.nav-link[data-wf-focus-visible] {
+.nav-link:focus-visible, .nav-link[data-wf-focus-visible] {
   outline-offset: 0px;
   color: #0050bd;
   border-radius: 4px;
@@ -2195,14 +2188,7 @@ body {
   color: #1a1b1fbf;
 }
 
-.nav-dropdown-toggle:focus-visible {
-  outline-offset: 0px;
-  color: #0050bd;
-  border-radius: 5px;
-  outline: 2px solid #0050bd;
-}
-
-.nav-dropdown-toggle[data-wf-focus-visible] {
+.nav-dropdown-toggle:focus-visible, .nav-dropdown-toggle[data-wf-focus-visible] {
   outline-offset: 0px;
   color: #0050bd;
   border-radius: 5px;
@@ -2229,14 +2215,7 @@ body {
   font-size: 14px;
 }
 
-.nav-dropdown-link:focus-visible {
-  outline-offset: 0px;
-  color: #0050bd;
-  border-radius: 5px;
-  outline: 2px solid #0050bd;
-}
-
-.nav-dropdown-link[data-wf-focus-visible] {
+.nav-dropdown-link:focus-visible, .nav-dropdown-link[data-wf-focus-visible] {
   outline-offset: 0px;
   color: #0050bd;
   border-radius: 5px;
@@ -2291,6 +2270,7 @@ body {
 }
 
 .button-primary.button-float {
+  z-index: 999;
   text-align: left;
   position: fixed;
   inset: auto 1% 1% auto;
@@ -2309,8 +2289,8 @@ body {
 
 .hero-heading-center {
   background-color: #f5f7fa00;
-  background-image: url("../images/banner_small.jpg");
-  background-position: 30% 70%;
+  background-image: url("https://cdn.prod.website-files.com/65e1060df84242841af52c74/67be217e0957a08a813a1f9c_festivalweide_banner.jpg");
+  background-position: 50% 100%;
   background-repeat: repeat;
   background-size: cover;
   border: 1px #000;
@@ -2430,6 +2410,7 @@ body {
   color: #f89dc3;
   text-align: center;
   text-shadow: 3px 2px 1px #1097b8;
+  align-self: center;
   font-family: Wedges, Arial, sans-serif;
   font-size: 50px;
   font-weight: 400;
@@ -2758,7 +2739,7 @@ body {
 
 .footer-form-submit {
   background-color: #1a1b1f;
-  background-image: url("../images/ic-20arrow-20go.svg");
+  background-image: url("https://cdn.prod.website-files.com/62434fa732124a0fb112aab4/62434fa732124a29b112aac4_ic%20Arrow%20Go.svg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: auto;
@@ -2988,17 +2969,34 @@ body {
   display: flex;
 }
 
+.bereikbaarheid.programma-wrapper-centraal {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .header-2 {
+  justify-content: center;
+  align-items: center;
   margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: Wedges, Arial, sans-serif;
   font-weight: 400;
 }
 
 .header-3 {
   align-self: flex-start;
+  margin-top: 10px;
   padding-left: 10px;
   font-family: Glacialindifference, Arial, sans-serif;
   font-weight: 700;
+}
+
+.veelgestelde-vragen.programma-wrapper-centraal {
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .text-block-8 {
@@ -3143,7 +3141,7 @@ body {
 
 .header-announcement {
   float: none;
-  color: #f89dc3;
+  color: #fff7f7;
   text-align: center;
   text-shadow: 3px 2px 1px #1097b8;
   font-family: Wedges, Arial, sans-serif;
@@ -3151,6 +3149,40 @@ body {
   font-weight: 400;
   line-height: 52px;
   position: static;
+}
+
+.accordion-item {
+  width: 100%;
+  overflow: hidden;
+}
+
+.accordion-toggle {
+  background-color: #0000;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+}
+
+.accordion-content {
+  background-color: #0000;
+  padding-bottom: 10px;
+  display: block;
+  position: static;
+}
+
+.accordion-icon {
+  font-size: 20px;
+}
+
+.accordion-header {
+  margin-top: 0;
+  font-family: Wedges, Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
 }
 
 @media screen and (max-width: 991px) {
@@ -3458,8 +3490,12 @@ body {
     flex-direction: column;
   }
 
+  .button-primary.button-float {
+    z-index: 999;
+  }
+
   .hero-heading-center {
-    background-image: url("../images/banner_small.jpg");
+    background-image: url("https://cdn.prod.website-files.com/65e1060df84242841af52c74/67be217e0957a08a813a1f9c_festivalweide_banner.jpg");
     background-repeat: repeat;
     background-size: cover;
     background-attachment: scroll;
@@ -3607,6 +3643,19 @@ body {
     font-size: 36px;
     line-height: 40px;
   }
+
+  .accordion-toggle {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .accordion-icon {
+    margin-right: 0;
+  }
+
+  .accordion-header {
+    text-align: center;
+  }
 }
 
 #w-node-_6aa302e8-5bb4-b9ba-c81f-81e0aacbb432-1af52c7a, #w-node-_86431162-0fcc-9e8c-1e81-1123b1f38806-1af52c7a, #w-node-d04844ec-5881-6e5b-9858-98598d677b35-1af52c7a, #w-node-_4a382165-2dba-3fcf-0d83-e81e0508d602-1af52c7a, #w-node-be063e0c-5028-09d0-b4b3-90b562aa11c9-1af52c7a, #w-node-_7ce1619f-db47-e906-ee51-c8cd90d417d8-1af52c7a, #w-node-cde31605-c173-76ae-9d34-fdb1c8e073c2-1af52c7a {
@@ -3615,21 +3664,21 @@ body {
 
 @font-face {
   font-family: 'Wedges';
-  src: url('../images/wedges.ttf') format('truetype');
+  src: url('https://cdn.prod.website-files.com/65e1060df84242841af52c74/65fcae13b69c71ec5bec770c_Wedges.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Glacialindifference';
-  src: url('../images/glacialindifference-bold.otf') format('opentype');
+  src: url('https://cdn.prod.website-files.com/65e1060df84242841af52c74/65fcaacf0d6ab81a987c0a62_GlacialIndifference-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Glacialindifference';
-  src: url('../images/glacialindifference-regular.otf') format('opentype');
+  src: url('https://cdn.prod.website-files.com/65e1060df84242841af52c74/65fcaacfd6b84030e2d65796_GlacialIndifference-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
