@@ -2289,7 +2289,7 @@ body {
 
 .hero-heading-center {
   background-color: #f5f7fa00;
-  background-image: url("https://cdn.prod.website-files.com/65e1060df84242841af52c74/67be217e0957a08a813a1f9c_festivalweide_banner.jpg");
+  background-image: url("../images/festivalweide_banner.jpg");
   background-position: 50% 100%;
   background-repeat: repeat;
   background-size: cover;
@@ -2739,7 +2739,7 @@ body {
 
 .footer-form-submit {
   background-color: #1a1b1f;
-  background-image: url("https://cdn.prod.website-files.com/62434fa732124a0fb112aab4/62434fa732124a29b112aac4_ic%20Arrow%20Go.svg");
+  background-image: url("../images/ic-20arrow-20go.svg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: auto;
@@ -3495,7 +3495,7 @@ body {
   }
 
   .hero-heading-center {
-    background-image: url("https://cdn.prod.website-files.com/65e1060df84242841af52c74/67be217e0957a08a813a1f9c_festivalweide_banner.jpg");
+    background-image: url("../images/festivalweide_banner.jpg");
     background-repeat: repeat;
     background-size: cover;
     background-attachment: scroll;
