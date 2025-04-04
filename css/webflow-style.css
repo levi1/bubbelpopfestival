@@ -3684,21 +3684,21 @@ body {
 
 @font-face {
   font-family: 'Wedges';
-  src: url('https://cdn.prod.website-files.com/65e1060df84242841af52c74/65fcae13b69c71ec5bec770c_Wedges.ttf') format('truetype');
+  src: url('../images/wedges.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Glacialindifference';
-  src: url('https://cdn.prod.website-files.com/65e1060df84242841af52c74/65fcaacf0d6ab81a987c0a62_GlacialIndifference-Bold.otf') format('opentype');
+  src: url('../images/glacialindifference-bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Glacialindifference';
-  src: url('https://cdn.prod.website-files.com/65e1060df84242841af52c74/65fcaacfd6b84030e2d65796_GlacialIndifference-Regular.otf') format('opentype');
+  src: url('../images/glacialindifference-regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
